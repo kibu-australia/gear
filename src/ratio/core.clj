@@ -4,7 +4,7 @@
 (def chainrings (range 28 59))
 
 (defn gear-inch
-  "Returns the gear inches for the given chainring/sprocket combination"
+  "Returns the gear inches for a given chainring/sprocket combination"
   [wheel chainring sprocket]
   (* wheel (double (/ chainring sprocket))))
 
