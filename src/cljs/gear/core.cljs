@@ -1,4 +1,4 @@
-(ns ratio.core)
+(ns gear.core)
 
 (def sprockets (range 11 25))
 (def chainrings (range 28 59))
