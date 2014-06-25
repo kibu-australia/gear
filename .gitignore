@@ -8,5 +8,6 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 *.swp
+.repl
 resources/public/js/gear.js
 resources/public/js/out
