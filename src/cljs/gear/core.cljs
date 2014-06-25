@@ -17,7 +17,7 @@
 
 (defn my-component []
   [:div
-   [:h3 "Gear Ratio Calculator"]
+   [:h3 "Gear Inch Calculator"]
    [:div
     "Chainring: " @chainring
     [slider chainring calc/chainring]]
