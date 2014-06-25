@@ -22,27 +22,13 @@
   (-> (calc/gear-inch @wheel @chainring @sprocket)
               (.toFixed 2)))
 
-(defn inch-slider []
-  [:input {:type "range"
-           :value (gear-ratio)
-           :min (apply min inches)
-           :max (apply max inches)
-           :style {:width "100%"}
-           :on-change #(let [v (-> % .-target .-value)
-                             s (calc/find-sprocket @wheel @chainring v)]
-                         (if (and (>= s (apply min sprockets))
-                                  (<= s (apply max sprockets)))
-                           (reset! sprocket s)
-                           nil))}])
-
-(defn my-component []
+(defn my-calculator []
   [:div
    [:div "Chainring: " @chainring
     [slider chainring chainrings]]
    [:div "Sprocket: " @sprocket
     [slider sprocket sprockets]]
-   [:div [:h1.result (gear-ratio) " gear inches"]
-    [inch-slider]]])
+   [:div [:h1.result (gear-ratio) " gear inches"]]])
 
-(reagent/render-component [my-component]
+(reagent/render-component [my-calculator]
                           (.getElementById js/document "main"))
