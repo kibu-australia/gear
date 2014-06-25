@@ -1,0 +1,39 @@
+#heading {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.selected {
+  font-weight: 800;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5px;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.result {
+  padding: 40px;
+  text-align: center;
+}
+
+.editable {
+  border-bottom: 1px dashed #ccc;
+}
+
+.editable:hover {
+  cursor: pointer;
+}
