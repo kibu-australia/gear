@@ -1,14 +1,9 @@
 # gear
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+Bicycle gear inch calculator for your sw8 fixie.
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Kibu
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License, the same as Clojure.
