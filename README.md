@@ -1,6 +1,8 @@
 # gear
 
-Bicycle gear inch calculator for your sw8 fixie.
+Gear inch calculator for your sw8 fixie.
+
+Check it out [here](https://kibu.com.au/gear)
 
 ## License
 
