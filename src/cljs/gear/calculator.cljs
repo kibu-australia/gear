@@ -18,9 +18,9 @@
 (defn suggest-ratio
   "Returns a vector of vectors containing chainring/sprocket combinations
    closest to desired gear inch"
-  [wheel gear-inch sprockets]
-  (for [chainring chainrings]
-    (let [sprocket (find-sprocket wheel chainring gear-inch)]
-      (when (and (>= sprocket (apply min sprockets))
-                 (<= sprocket (apply max sprockets)))
-        [chainring sprocket]))))
+  [wheel gear-inch chainrings sprockets]
+  (for [chainring chainrings
+        :let [sprocket (find-sprocket wheel chainring gear-inch)]
+        :when (and (>= sprocket (apply min sprockets))
+                   (<= sprocket (apply max sprockets)))]
+    [chainring sprocket]))
