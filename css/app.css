@@ -37,3 +37,9 @@ body {
 .editable:hover {
   cursor: pointer;
 }
+
+.nav > li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+}
